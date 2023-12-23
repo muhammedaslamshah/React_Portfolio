@@ -13,7 +13,7 @@ const Skills = () => {
             className="shadow p-3 mb-2 bg-body-tertiary rounded text-center d-inline-flex mx-auto"
             style={{ width: "11rem" }}
           >
-            <Card.Img variant="top" src={require(`./assets/${item.image}.png`)} />
+            <Card.Img variant="top" src={require(`./assets/${item.image}.png`)}/>
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
             </Card.Body>
