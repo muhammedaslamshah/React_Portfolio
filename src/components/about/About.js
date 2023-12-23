@@ -1,14 +1,19 @@
 import React from 'react'
-import {Button,Navbar,Nav,NavDropdown,Container } from 'react-bootstrap';
+import {Container } from 'react-bootstrap';
 const About = () => {
   return (
     <>
-    <Container>
-    <h1>About Me</h1>
+    <Container className='vh-100' >
+    <div>
+    <h1 className='text-center pb-5'>About Me</h1>
     <p> Hello! I am Muhammed Aslam Shah S, a passionate Software Engineer
             and Entrepreneur hailing from the vibrant town of Karunagappally in
             India. With a fervor for creating innovative digital solutions, I
             specialize in the dynamic field of React development.</p>
+    </div>
+    <div>
+
+    </div>
     </Container>
 
     </>
