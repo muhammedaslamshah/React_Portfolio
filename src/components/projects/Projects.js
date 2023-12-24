@@ -1,12 +1,12 @@
-import React, {useState} from "react";
-import { Container, Card,} from "react-bootstrap";
+import React, { useState } from "react";
+import "./style.css";
+import { Container, Card } from "react-bootstrap";
 import { projectsdata } from "./projects.data";
 const Projects = () => {
-    
-    const [items, ] = useState(projectsdata);
+  const [items] = useState(projectsdata);
   return (
-    <>
-      <Container >
+    <div id="project">
+      <Container>
         <h1 className="text-center pt-5 pb-5">My Projects</h1>
         <Container className="d-flex flex-wrap justify-content-center">
           {items.map((item) => (
@@ -17,15 +17,18 @@ const Projects = () => {
               <Card.Img
                 variant="top"
                 src={require(`./assets/${item.image}.png`)}
-                />
+              />
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
               </Card.Body>
+              <a href={item.links} className="pointer-hover txt-dec-non">
+                Click here
+              </a>
             </Card>
           ))}
         </Container>
       </Container>
-    </>
+    </div>
   );
 };
 

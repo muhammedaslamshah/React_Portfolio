@@ -1,0 +1,7 @@
+#header{
+    position: fixed;
+}
+.txt-dec-non{
+    text-decoration: none;
+    z-index: 1000;
+}

@@ -1,0 +1,11 @@
+.pointer-hover {
+  cursor: pointer;
+}
+.Bg-white,
+.Bg-white:hover {
+  background-color: white;
+  border: none;
+}
+.txt-dec-non {
+  text-decoration: none;
+}
